@@ -1,0 +1,12 @@
+---
+- name: create user1
+  hosts: ungrouped
+  tasks:
+    - name: create user1
+      user:
+        name: user1
+        uid: 4000
+        shell: /sbin/nologin
+        groups: root
+        state: present
+...
