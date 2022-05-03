@@ -1,0 +1,9 @@
+---
+- name: wintest
+  hosts: win
+  tasks:
+    - name:
+      win_copy:
+        src: ./file1
+        dest: C:\
+...
